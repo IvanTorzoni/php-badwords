@@ -26,9 +26,13 @@ $censor = $_GET["word-censorship"];
 
     <section>
         <!-- censura nel testo -->
-        <h1>Testo censurato : <?php echo str_replace($censor, "***", $text_area); ?></h1>
-
-        
+        <?php 
+        $censor_text = str_replace($censor, "***", $text_area); 
+        ?>
+        <!-- testo censurato -->
+        <h1>Testo censurato : <?php echo $censor_text; ?> </h1>
+        <!-- Mostro la lunghezza del testo censurato -->
+        <p>Questa stringa è lunga <?php echo strlen($censor_text); ?> caratteri </p>
     </section>
 
 </body>
