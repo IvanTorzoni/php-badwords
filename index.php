@@ -10,10 +10,14 @@
     <title>PHP INPUT PAGE</title>
 </head>
 <body>
-    <!-- test comunicazione -->
+    <h1>Si prega di inserire un testo</h1>
+    <!-- Form -->
     <form action="functions.php" method="get">
-    <textarea name="test"></textarea>
+    <!-- Text area per inserimento dati utente -->
+    <textarea name="text-area"></textarea>
+    <!-- Bottone per invio dati\ -->
     <button type="submit">Invia</button>
     </form>
+    <!-- /Form -->
 </body>
 </html>

@@ -1,6 +1,6 @@
 <?php
-//prendo l'informazione dall' imput
-$test = $_GET["test"]
+//prendo l'informazione dall' input
+$text_area = $_GET["text-area"]
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +11,12 @@ $test = $_GET["test"]
     <title>PHP OUTPUT PAGE</title>
 </head>
 <body>
-    <!-- metto in pagina le informazioni -->
-    <h1>Testo utente : <?php echo $test; ?></h1>
+    <section>
+        <!-- metto in pagina le informazioni -->
+        <h1>Testo inserito dall' utente : <?php echo $text_area; ?></h1>
+        <!-- Mostro la lunghezza del testo inserito -->
+        <p>Questa stringa è lunga <?php echo strlen($text_area); ?> caratteri </p>
+    </section>
+
 </body>
 </html>
