@@ -1,5 +1,5 @@
 <?php
-$test = "try"
+
 ?>
 
 <!DOCTYPE html>
@@ -7,9 +7,13 @@ $test = "try"
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PHP INPUT PAGE</title>
 </head>
 <body>
-    <h1>questo è un <?php echo $test; ?></h1>
+    <!-- test comunicazione -->
+    <form action="functions.php" method="get">
+    <textarea name="test"></textarea>
+    <button type="submit">Invia</button>
+    </form>
 </body>
 </html>
