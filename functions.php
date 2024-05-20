@@ -14,6 +14,9 @@ $censor = $_GET["word-censorship"];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP OUTPUT PAGE</title>
+
+    <!-- style CSS -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -26,8 +29,8 @@ $censor = $_GET["word-censorship"];
 
     <section>
         <!-- censura nel testo -->
-        <?php 
-        $censor_text = str_replace($censor, "***", $text_area); 
+        <?php
+        $censor_text = str_replace($censor, "***", $text_area);
         ?>
         <!-- testo censurato -->
         <h1>Testo censurato : <?php echo $censor_text; ?> </h1>
