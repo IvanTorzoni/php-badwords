@@ -22,7 +22,7 @@ $censor = $_GET["word-censorship"];
 <body>
     <section>
         <!-- metto in pagina le informazioni -->
-        <h1>Testo inserito dall' utente : <?php echo $text_area; ?></h1>
+        <h2>Testo inserito dall' utente : <?php echo $text_area; ?></h2>
         <!-- Mostro la lunghezza del testo inserito -->
         <p>Questa stringa è lunga <?php echo strlen($text_area); ?> caratteri </p>
     </section>
@@ -33,7 +33,7 @@ $censor = $_GET["word-censorship"];
         $censor_text = str_replace($censor, "***", $text_area);
         ?>
         <!-- testo censurato -->
-        <h1>Testo censurato : <?php echo $censor_text; ?> </h1>
+        <h2>Testo censurato : <?php echo $censor_text; ?> </h2>
         <!-- Mostro la lunghezza del testo censurato -->
         <p>Questa stringa è lunga <?php echo strlen($censor_text); ?> caratteri </p>
     </section>
